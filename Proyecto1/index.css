@@ -1,0 +1,441 @@
+/*A todo se le aplicara esto*/
+*{
+    margin:0;
+    padding:0;
+}
+/*estilos para el body*/
+body{
+    background:white;
+}
+
+/*estilos para la etiqueta header */
+header{
+    height: 100px;
+    width:100%;
+    display:flex;
+    align-items: center;
+    overflow:hidden;
+
+}
+/*CARACTERISTICAS DE LAS IMAGENES*/
+#logo{
+    width: 200px; height: 200px;
+    position:absolute; 
+    top:0px; 
+    left:35%;
+    z-index:1;
+}
+.icono_compras{
+    width: 30px; height: 30px;
+}
+/*LAS SECCIONES DEL HEADER*/
+/*seccion1 (sonde se encuentran los primeros dos items del menu principal)*/
+.sec1 {
+    width:35%;
+}
+/*los enlaces ce la seccion 1*/
+.sec1 a {
+    font-family: 'Big Shoulders Display' ;
+    font-size: 30px;
+    color:black;
+    padding:10px 20px;
+    text-align: center;
+    float:right;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.sec1 a:hover{
+    background:rgb(170, 136, 168);
+    border-radius:50px;
+}
+.division_menu{
+    width:13%;
+}
+/*seccion2 (donde se encuentran los ultimos dos items del menu principal)*/
+.sec2 {
+    width:35%;
+}
+/*los enlaces ce la seccion 2*/
+.sec2 a {
+    font-family: 'Big Shoulders Display' ;
+    font-size: 30px;
+    color:black;
+    padding:10px 20px;
+    align-content: center;
+    float:left;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.sec2 a:hover{
+    background:rgb(170, 136, 168);
+    border-radius:50px;
+}
+/*Seccion donde se encuentra el icono de compras*/
+.sec3 {
+    width:5%;
+}
+/*los enlaces ce la seccion 3*/
+.sec3 a {
+    align-items: center;
+    float:right;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.sec3 a:hover{
+    background:rgb(170, 136, 168);
+    border-radius:50px;
+}
+/*Seccion para el inicio de sesion*/
+.sec4 {
+    width:10%;
+}
+/*los enlaces ce la seccion 4*/
+.sec4 a {
+    font-family: 'Big Shoulders Display' ;
+    font-size: 25px;
+    color:black;
+    padding:10px 5px;
+    align-items: center;
+    float:right;
+    transition: all 500ms ease;
+}
+.sec4 a:hover{
+    background:rgb(170, 136, 168);
+    border-radius:50px;
+}
+
+#jumbotron{
+    height: 670px;
+    background-image: url(./imagenes/imagenJumbotrom4.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+#divicion_jumbotron{
+    padding:150px 0px;
+    align-items: center;
+}
+#bienvenida{
+    padding-left:0px;
+    margin:0px;
+    font-family: 'Goudy Old Style';
+    font-weight: bolder;
+    text-align: center;
+    font-size: 60px;
+    background: rgba(209, 209, 206, 0.541);
+}
+.sub{
+    padding-left:0px;
+    margin:0px;
+    font-family: 'Goudy Old Style';
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+    background: rgba(209, 209, 206, 0.541);
+}
+#pregunta{
+    padding-top: 130px;
+    padding-left:20px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    font-size: 40px;
+}
+#descripcion{
+    padding-left:20px;
+    font-family: 'Big Shoulders Display' ;
+    font-weight: bolder;
+    font-size: 30px;
+}
+#email{
+    padding: 12px 60px;
+    margin: 5px 20px;
+    border: 3px solid #ccc;
+    border-radius: 100px;
+    box-sizing: border-box;
+    font-size:15px;
+}
+/*EDITAR EL BOTON*/
+#btnEnviar{
+    padding: 12px 20px;
+    margin: 5px 20px;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    font-size:15px;
+
+}
+/*APARTADO DEL CATALOGO*/
+#catalogo{
+    box-sizing: border-box;
+    padding-bottom: 40px;
+    overflow:hidden;
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+}
+.tarjeta-wrap{
+    margin:30px;
+    -webkit-perspective: 800;
+    perspective: 800;
+}
+.tarjeta{
+    width: 300px;
+    height: 350px;
+    background: #92627e;
+    position: relative;
+    transform-style:preserve-3d;
+    box-shadow: 0px 10px 15px -15px rgba(0, 0, 0, 0.65);
+}
+.atras p{
+    padding: 20px 20px;
+}
+.adelante, .atras{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.atras{
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+.tarjeta-wrap:hover .tarjeta{
+    transform: rotateY(180deg);
+}
+.subtitulo{
+    padding: 30px 100px;
+    font-family: 'Big Shoulders Display';
+    font-weight: bolder;
+    text-align: center;
+    font-size: 20px;
+}
+.tarjeta1{
+    background-image: url(./imagenes/pastel1.jpg);
+    background-size:cover;
+}
+.tarjeta2{
+    background-image: url(./imagenes/pastel2.jpg);
+    background-size:cover;
+}
+.tarjeta3{
+    background-image: url(./imagenes/pastel3.jpg);
+    background-size:cover;
+}
+#adicional{
+    height: 100%;
+    width:100%;
+    display:flex;
+    overflow:hidden;
+    
+}
+#div_img{
+    padding:300px 300px;
+    background-image: url(./imagenes/imgAdic1.jpg);
+    background-size:cover;
+}
+#div_cont{
+    overflow:hidden;
+    padding:0px 0px;
+    background: #b46c96d2;
+}
+#titulo_adic{
+    overflow:hidden;
+    padding-top: 230px;
+    font-family: 'Big Shoulders Display' ;
+    font-weight: bolder;
+    font-size: 70px;
+    text-align: center;
+}
+#p_adic{
+    overflow:hidden;
+    padding:0px 0px;
+    font-family: 'Dancing Script', cursive ;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+}
+#btnCrear{
+    overflow:hidden;
+    padding: 12px 30px;
+    margin: 10px 370px;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    font-size:15px;
+}
+footer{
+    height: 100px;
+    width:100%;
+    display:flex;
+    align-items: center;
+    overflow:hidden;
+    background-size:cover;
+    background: rgb(195, 200, 204);
+}
+.icono_redes{
+    width: 30px; height: 30px;
+}
+.redes{
+    padding:10px 30px;
+}
+.ap1 a,.ap2 a{
+    font-family: 'Big Shoulders Display' ;
+    font-size: 20px;
+    color:black;
+    padding:10px 20px;
+    text-align: center;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.ap1 a:hover{
+    background:rgb(170, 136, 168);
+    border-radius:50px;
+}
+.ap2 a:hover{
+    background:rgb(170, 136, 168);
+    border-radius:50px;
+}
+.ap1, .ap2{
+    padding:10px 90px;
+}
+.icono_redes_whats{
+    width: 43px; height: 30px;
+}
+
+
+/*---------MEDIA QUERI-----------*/
+@media (max-width:576px){
+    header{
+        height: 110px;
+    }
+    /*CARACTERISTICAS DE LAS IMAGENES*/
+    #logo{
+        width: 110px; height: 110px;
+        left:29%;
+    }
+    .icono_compras{
+        width: 25px; height: 25px;
+    }
+    /*LAS SECCIONES DEL HEADER*/
+    /*seccion1 (sonde se encuentran los primeros dos items del menu principal)*/
+    .sec1 {
+        width:35%;
+    }
+    /*los enlaces ce la seccion 1*/
+    .sec1 a {
+        font-size: 23px;
+    }
+    /*seccion2 (donde se encuentran los ultimos dos items del menu principal)*/
+    .sec2 {
+        width:40%;
+    }
+    /*los enlaces ce la seccion 2*/
+    .sec2 a {
+        font-size: 23px;
+    }
+    /*los enlaces ce la seccion 4*/
+    .sec4 a {
+        font-size: 15px;
+    }
+    
+    #jumbotron{
+        height: 400px;
+    }
+    #divicion_jumbotron{
+        padding-top: 20px;
+    }
+    #bienvenida{
+        font-size: 40px;
+    }
+    .sub{
+        font-size: 17px;
+    }
+    #pregunta{
+        padding-top: 90px;
+        padding-left: 0px;
+        text-align: center;
+        font-size: 25px;
+    }
+    #descripcion{
+        font-size: 20px;
+    }
+    #email{
+        padding: 10px 30px;
+        font-size:13px;
+    }
+    /*EDITAR EL BOTON*/
+    #btnEnviar{
+        padding: 10px 10px;
+        margin: 5px 5px;
+        font-size:13px;
+    
+    }
+    /*APARTADO DEL CATALOGO*/
+    .tarjeta-wrap{
+        margin:5px;
+    }
+    .tarjeta{
+        width: 120px;
+        height: 150px;
+    }
+    .atras p{
+        padding: 5px 5px;
+    }
+    
+    .atras{
+        font-size: 12px;
+    }
+
+    .subtitulo{
+        font-size: 15px;
+    }
+    #adicional{
+        height: 200px;
+    }
+    #div_img{
+        padding:100px 100px;
+    }
+    #titulo_adic{
+        padding-top: 0px;
+        font-size: 25px;
+    }
+    #p_adic{
+        white-space: pre;
+        font-size: 15px;
+
+    }
+    #btnCrear{
+        padding: 10px 10px;
+        margin: 0px 100px;
+        border-radius: 100px;
+        font-size:13px;
+    }
+    footer{
+        height: 100px;
+    }
+    .icono_redes{
+        width: 30px; height: 30px;
+    }
+    .redes{
+        padding:2px 2px;
+    }
+    .ap1 a,.ap2 a{
+        font-size: 15px;
+        padding:0px 0px;
+    }
+    .ap1, .ap2{
+        padding:5px 40px;
+    }
+}
